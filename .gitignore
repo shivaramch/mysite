@@ -2,6 +2,9 @@
 
 .idea/vcs.xml
 *~
+venv
+staticfiles
+.env
 __pycache__
 db.sqlite3
 /static
@@ -59,7 +62,7 @@ coverage.xml
 
 # Django stuff:
 *.log
-local_settings.py
+mysite/local_settings.py
 
 # Flask stuff:
 instance/
@@ -87,7 +90,6 @@ celerybeat-schedule
 *.sage.py
 
 # dotenv
-.env
 
 # virtualenv
 .venv
@@ -107,3 +109,4 @@ ENV/
 # mypy
 .mypy_cache/
 
+requirements.txt
