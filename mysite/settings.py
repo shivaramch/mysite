@@ -24,7 +24,7 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 SECRET_KEY = '$98o&a&j4f-9rw=5o0+r7un!rsn_5x%yinmjw2*n_h&_*t7)5k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -77,11 +77,14 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd8up19dn147fm',
+        'USER': 'kmfdhfyjlwfkmp',
+        'PASSWORD': 'e4af6eaa80d5b7afedb624e27418afe545e2f58ee6011bfcd18140c1d97d9ab7',
+        'HOST': 'ec2-23-23-234-118.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
